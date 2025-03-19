@@ -66,6 +66,7 @@ int log_in(ssize_t res, int newfd, struct sockaddr_in cin, sqlite3 *sql_db) //�
 		fprintf(stderr, "[%s:%d] newfd=%d 客户端关闭\n", inet_ntoa(cin.sin_addr), ntohs(cin.sin_port), newfd);
 		return -1;
 	}
+	// switch (Com.usertype)
 	switch (Com.usertype)
 	{
 	case 1:
